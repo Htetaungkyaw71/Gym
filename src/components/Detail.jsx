@@ -9,8 +9,6 @@ const Detail = ({ itemsPerPage }) => {
   const { name } = useParams();
   const { data, isLoading } = useGetBodyDetailQuery(name);
 
-  console.log(data);
-
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
